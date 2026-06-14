@@ -1977,7 +1977,7 @@ En cualquiera de estos casos, NO habrá ganador en ese sorteo, y la rifa permane
               <div style={{fontWeight:600,fontSize:"14px",color:"#25D366",marginBottom:"3px"}}>📢 Únete a nuestro canal de WhatsApp</div>
               <div style={{fontSize:"12px",color:"var(--text2)"}}>Entérate primero de sorteos, ganadores y promociones exclusivas</div>
             </div>
-            <a href="https://whatsapp.com/channel/0029VbCcxZcDJ6H82yFjtk3q" target="_blank" rel="noopener noreferrer"
+            <a href="https://whatsapp.com/channel/0029VbDFbZpLNSa5Oce5tI2k" target="_blank" rel="noopener noreferrer"
               style={{background:"#25D366",color:"#fff",textDecoration:"none",fontFamily:"'Syne',sans-serif",fontWeight:700,fontSize:"13px",padding:"10px 20px",borderRadius:"9px",whiteSpace:"nowrap"}}>
               Unirme al canal →
             </a>

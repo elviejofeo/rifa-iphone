@@ -45,7 +45,6 @@ const ESTADOS = [
 
 const BANKS = [
   { banco: "BBVA Bancomer", nombre: "JUAN JOSE PEREZ MIRANDA",    clabe: "012180014561431562" },
-  { banco: "BBVA Bancomer", nombre: "NESTOR DANIEL CANTU ARROYO", clabe: "012580015417896850" },
 ];
 
 const FOTOS = [F1, F2, F3];

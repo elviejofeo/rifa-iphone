@@ -446,13 +446,8 @@ export default function RifaMX() {
     if(!refCodigo){ setRefRevId(null); return; }
     async function resolverRef(){
       const { data } = await supabase
-        .from("revendedores")
-        .select("id")
-        .eq("codigo", refCodigo)
-        .eq("activo", true)
-        .limit(1)
-        .single();
-      setRefRevId(data ? data.id : null);
+        .rpc("resolver_ref_revendedor", { p_codigo: refCodigo });
+      setRefRevId(data || null);
     }
     resolverRef();
   },[refCodigo]);
@@ -634,11 +629,7 @@ export default function RifaMX() {
   const cargarVentasRevendedor = async (revId) => {
     setRevLoading(true);
     const { data } = await supabase
-      .from("boletos")
-      .select("numero, status, fecha_apartado, participantes(nombre, apellido, whatsapp)")
-      .eq("revendedor_id", revId)
-      .neq("status", "disponible")
-      .order("fecha_apartado", {ascending:false});
+      .rpc("ventas_revendedor", { p_revendedor_id: revId });
     setRevVentas(data || []);
     setRevLoading(false);
   };
@@ -1589,8 +1580,8 @@ En cualquiera de estos casos, NO habrá ganador en ese sorteo, y la rifa permane
                     {revVentas.map((v,i)=>(
                       <tr key={i}>
                         <td style={{fontWeight:600}}>{v.numero}</td>
-                        <td>{v.participantes?.nombre} {v.participantes?.apellido}</td>
-                        <td>{v.participantes?.whatsapp}</td>
+                        <td>{v.comprador}</td>
+                        <td>{v.whatsapp}</td>
                         <td>
                           {v.status==="confirmado" && <span className="badge bg">Pagado</span>}
                           {v.status==="en_revision" && <span className="badge by">En revisión</span>}

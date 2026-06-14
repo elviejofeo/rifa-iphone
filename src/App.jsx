@@ -989,7 +989,7 @@ export default function RifaMX() {
       {/* NAV */}
       <nav className="nav">
         <div className="logo">
-          <img src="/logo-doncayito.png" alt="Don Cayito Mariscos Rifas" style={{height:"72px",width:"auto",display:"block"}} />
+          <img src="/logo-doncayito.png" alt="Rifa de la Raza" style={{height:"72px",width:"auto",display:"block"}} />
         </div>
         <div className="nav-links">
           {[["home","Inicio"],["boletos","Boletos"],["verificar","Verificar"],["pago","Métodos de pago"],["bases","Bases del Sorteo"],["privacidad","Aviso de Privacidad"]].map(([v,l])=>(
@@ -1026,7 +1026,7 @@ export default function RifaMX() {
         <div className="hero-wrap">
           <div className="hero-grid">
             <div className="hero">
-              <img src="/logo-doncayito.png" alt="Don Cayito Mariscos Rifas" style={{height:"130px",width:"auto",display:"block",marginBottom:"1rem"}} />
+              <img src="/logo-doncayito.png" alt="Rifa de la Raza" style={{height:"130px",width:"auto",display:"block",marginBottom:"1rem"}} />
               <div className="hero-eyebrow"><div className="pulse"></div>Sorteo activo · Se rifa al vender el 80% de los boletos</div>
               <h1>Gana un<br/><em>iPhone 17e</em></h1>
               <p className="hero-sub">iPhone 17e nuevo, sellado. Entra desde $25 MXN.</p>
@@ -1038,7 +1038,7 @@ export default function RifaMX() {
               <div style={{background:"var(--yellow-soft)",border:"1px solid #F5D9A8",borderRadius:"var(--r)",padding:"14px 18px",marginTop:"1.25rem"}}>
                 <div style={{fontWeight:700,color:"var(--text)",fontSize:14,marginBottom:6}}>🎁 Bonos adicionales</div>
                 <div style={{fontSize:13,color:"var(--text2)",lineHeight:1.6}}>
-                  $30,000 en efectivo + comida gratis en restaurante Don Cayito para 6 personas.
+                  $1,000 en efectivo. Envío incluido a todo México.
                   <br/><strong style={{color:"var(--text)"}}>Válidos pagando en las primeras 24 horas.</strong>
                 </div>
               </div>
@@ -1099,43 +1099,6 @@ export default function RifaMX() {
           </div>
         </div>
 
-        {/* Visítanos - restaurante físico */}
-        <div style={{padding:"3rem 1.5rem"}}>
-          <div style={{maxWidth:"1100px",margin:"0 auto"}}>
-            <div style={{textAlign:"center",marginBottom:"2rem"}}>
-              <div style={{fontFamily:"'Syne',sans-serif",fontWeight:800,fontSize:"1.5rem",color:"var(--text)",marginBottom:"0.5rem"}}>📍 Somos un negocio real, visítanos</div>
-              <div style={{fontSize:14,color:"var(--text2)",maxWidth:560,margin:"0 auto",lineHeight:1.6}}>
-                Don Cayito es un restaurante de mariscos con local físico en el malecón de Presa de la Boca. Ven a comer y conócenos.
-              </div>
-            </div>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1.3fr",gap:"1.5rem",alignItems:"stretch"}} className="visit-grid">
-              <div style={{background:"var(--bg2)",border:"1px solid var(--border)",borderRadius:"var(--r)",padding:"1.75rem",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                <div style={{fontFamily:"'Syne',sans-serif",fontWeight:700,fontSize:"1.2rem",marginBottom:"1rem"}}>🦐 Mariscos Don Cayito</div>
-                <div style={{fontSize:14,color:"var(--text2)",lineHeight:1.7,marginBottom:"1.25rem"}}>
-                  <strong style={{color:"var(--text)"}}>Dirección:</strong><br/>
-                  Antigua Carretera Nacional 24<br/>
-                  San Javier, Presa de la Boca<br/>
-                  Santiago, Nuevo León
-                </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=Don+Cayito+Restaurante&query_place_id=ChIJ2Y3WXQDPYoYRjytzR5w59C8"
-                  target="_blank" rel="noopener noreferrer"
-                  style={{display:"inline-block",background:"var(--accent)",color:"#fff",fontWeight:600,fontSize:14,padding:"12px 22px",borderRadius:"10px",textDecoration:"none",textAlign:"center"}}>
-                  📍 Cómo llegar
-                </a>
-              </div>
-              <div style={{borderRadius:"var(--r)",overflow:"hidden",border:"1px solid var(--border)",minHeight:"300px"}}>
-                <iframe
-                  title="Ubicación Don Cayito"
-                  src="https://www.google.com/maps?q=25.4134941,-100.1392638&z=15&output=embed"
-                  style={{border:0,width:"100%",height:"100%",minHeight:"300px",display:"block"}}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
       </>}
 
       {/* BOLETOS */}
@@ -1368,20 +1331,20 @@ Fecha de última actualización: 15 de mayo de 2026.`},
 
       {/* BASES DEL SORTEO */}
       {view==="bases" && <div className="page" style={{maxWidth:820}}>
-        <div className="pg-hd"><h2>Bases del Sorteo</h2><p>Don Cayito Rifas · iPhone 17e</p></div>
+        <div className="pg-hd"><h2>Bases del Sorteo</h2><p>Rifa de la Raza · iPhone 17e</p></div>
 
         <div style={{background:"var(--accent-soft)",border:"1px solid var(--border2)",borderRadius:"var(--r)",padding:"1rem 1.25rem",marginBottom:"2rem",fontSize:13,color:"var(--text2)",lineHeight:1.6}}>
           Al comprar uno o más boletos, el participante acepta y se sujeta a estas bases en su totalidad.
         </div>
 
         {[
-          {titulo:"1. ORGANIZADOR",contenido:`El presente sorteo es organizado por Don Cayito (en adelante, "el Organizador"), responsable de la administración del sorteo, la validación de pagos y la entrega del premio.`},
+          {titulo:"1. ORGANIZADOR",contenido:`El presente sorteo es organizado por Rifa de la Raza (en adelante, "el Organizador"), responsable de la administración del sorteo, la validación de pagos y la entrega del premio.`},
           {titulo:"2. PREMIO",contenido:`El premio principal consiste en:
 • Un teléfono iPhone 17e nuevo, sellado de fábrica.
 
 Bonos adicionales (válidos únicamente si el boleto ganador fue pagado dentro de las primeras 24 horas posteriores a su apartado):
-• $30,000 (treinta mil pesos) en efectivo.
-• Comida gratis en el restaurante Don Cayito para 6 personas.
+• $1,000 (mil pesos) en efectivo.
+• Envío del premio incluido, sin costo, a cualquier parte de México.
 
 Si el boleto ganador no fue pagado dentro de las primeras 24 horas, el participante conserva el premio principal (iPhone 17e), pero no recibe los bonos adicionales.`},
           {titulo:"3. BOLETOS Y PRECIO",contenido:`• La rifa consta de 1,500 boletos, numerados del 0001 al 1500 (cuatro dígitos).
@@ -2024,7 +1987,7 @@ En cualquiera de estos casos, NO habrá ganador en ese sorteo, y la rifa permane
             {/* Logo + descripcion */}
             <div>
               <div style={{fontFamily:"'Syne',sans-serif",fontWeight:800,fontSize:"1.4rem",letterSpacing:"-0.5px",marginBottom:"0.75rem"}}>
-                Don Cayito <span style={{color:"var(--accent)"}}>Rifas</span>
+                Rifa de la <span style={{color:"var(--accent)"}}>Raza</span>
               </div>
               <div style={{fontSize:"12px",color:"var(--text3)",lineHeight:1.8}}>
                 Sorteos transparentes · Verificación en tiempo real<br/>
@@ -2061,7 +2024,7 @@ En cualquiera de estos casos, NO habrá ganador en ese sorteo, y la rifa permane
           {/* Bottom bar */}
           <div style={{borderTop:"1px solid var(--border)",paddingTop:"1.25rem",display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:"8px"}}>
             <div style={{fontSize:"11px",color:"var(--text3)"}}>
-              © 2026 Don Cayito Rifas. Todos los sorteos se basan en resultados oficiales de la Lotería Nacional.
+              © 2026 Rifa de la Raza. Todos los sorteos se basan en resultados oficiales de la Lotería Nacional.
             </div>
             <div style={{display:"flex",alignItems:"center",gap:"16px",flexWrap:"wrap"}}>
               <button onClick={()=>setView("privacidad")} style={{background:"none",border:"none",cursor:"pointer",color:"var(--text3)",fontSize:"11px",fontFamily:"'DM Sans',sans-serif",textDecoration:"underline"}}>

@@ -972,7 +972,7 @@ export default function RifaMX() {
 
   const badge = (s) => {
     if(s==="confirmado") return <span className="badge bg">✓ Confirmado</span>;
-    if(s==="revision")   return <span className="badge by">⏳ En revisión</span>;
+    if(s==="en_revision"||s==="revision") return <span className="badge by">⏳ En revisión</span>;
     return <span className="badge br">✗ No pagado</span>;
   };
 

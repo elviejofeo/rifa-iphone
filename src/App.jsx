@@ -5,8 +5,8 @@ const F3 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGB
 import { useState, useEffect, useCallback } from "react";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const SUPABASE_URL = "https://faudbphdtizsjiltiake.supabase.co";
-const SUPABASE_KEY = "sb_publishable_HDCzSfEc7OL3lYSPJ-NpbQ_yuCq5E_g";
+const SUPABASE_URL = "https://rawdekmnlnqqmjinhogg.supabase.co";
+const SUPABASE_KEY = "sb_publishable_6jwNQIZqglrNDTd3dMiMnA_FN4OtKLu";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 

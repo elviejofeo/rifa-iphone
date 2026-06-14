@@ -22,10 +22,6 @@ const PACKAGES = [
   { qty: 50,   price: 1250,  popular: true  },
   { qty: 75,   price: 1875,  popular: false },
   { qty: 100,  price: 2500,  popular: false },
-  { qty: 150,  price: 3750,  popular: false },
-  { qty: 200,  price: 5000,  popular: false },
-  { qty: 300,  price: 7500,  popular: false },
-  { qty: 500,  price: 12500, popular: false },
 ];
 
 const BONOS = [
